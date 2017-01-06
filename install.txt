@@ -1,0 +1,23 @@
+I. Install GPIO library-t
+
+In terminal type:
+
+$ tar xfz wiringPi-5edd177.tar.gz
+$ cd wiringPi-98bcb20
+$ sudo ./build
+
+II. Copy files to its place
+
+In terminal type:
+
+$ cp telefon.py /home/pi/bin
+$ cp felvesz.sh /home/pi/bin
+$ cp letesz.sh /home/pi/bin
+
+III. Make program autostart on boot
+
+$ sudo cp telefon.sh /etc/init.d/
+
+In terminal type:
+
+$ update-rc.d telefon.sh defaults
